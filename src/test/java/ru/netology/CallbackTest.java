@@ -32,8 +32,6 @@ public class CallbackTest {
     @Test
     public void sendForm() {
         driver.get("http://localhost:9999");
-        //driver.findElement().sendKeys("Иван");
-        //driver.findElement().sendKeys("+78002000000");
         List<WebElement> textFields = driver.findElements(By.className("input__control"));
         textFields.get(0).sendKeys("Иван");
         textFields.get(1).sendKeys("+78002000000");
